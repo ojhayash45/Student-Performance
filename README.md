@@ -1,177 +1,191 @@
-📊 Student Performance Analysis (EDA)
-📌 Project Overview
+# 📊 Student Performance EDA Analysis
 
-This project performs Exploratory Data Analysis (EDA) on a student performance dataset to understand the key factors that influence academic results. The analysis explores relationships between variables such as study time, absences, parental support, extracurricular activities, and GPA.
+![Python](https://img.shields.io/badge/Python-3.9-blue)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-orange)
+![Seaborn](https://img.shields.io/badge/Visualization-Seaborn-green)
+![Matplotlib](https://img.shields.io/badge/Visualization-Matplotlib-yellow)
+![Status](https://img.shields.io/badge/Project-Completed-success)
 
-Using Python and data visualization techniques, the project identifies meaningful patterns and insights that help explain how different factors impact student academic performance.
+---
 
-🎯 Objectives
+# 📌 Project Overview
 
-The main goals of this project are:
+This project performs **Exploratory Data Analysis (EDA)** on a student performance dataset to understand the factors influencing academic results.
 
-To understand the structure and characteristics of the dataset
+The analysis investigates relationships between variables such as:
 
-To analyze how different features affect student GPA
+- Study time
+- Absences
+- Parental support
+- Extracurricular activities
+- GPA
 
-To identify correlations between variables
+Using **Python, Pandas, and data visualization techniques**, the project uncovers patterns and insights that help explain student academic performance.
 
-To visualize patterns in student performance data
+---
 
-To derive meaningful insights that explain academic outcomes
+# 🎯 Objectives
 
-📂 Dataset Information
+The main objectives of this project are:
 
-The dataset contains 999 student records with 15 features representing demographic, academic, and behavioral attributes.
+- Understand the dataset structure and features
+- Analyze factors affecting student GPA
+- Identify correlations between variables
+- Visualize trends and patterns
+- Extract meaningful insights from the data
 
-Features in the Dataset
-Feature	Description
-StudentID	Unique identifier for each student
-Age	Age of the student
-Gender	Gender of the student
-Ethnicity	Ethnicity category
-ParentalEducation	Education level of parents
-StudyTimeWeekly	Weekly study time (hours)
-Absences	Number of absences
-Tutoring	Whether student receives tutoring
-ParentalSupport	Level of parental support
-Extracurricular	Participation in extracurricular activities
-Sports	Participation in sports
-Music	Participation in music activities
-Volunteering	Participation in volunteering
-GPA	Grade Point Average
-GradeClass	Academic performance category
-⚙️ Technologies Used
+---
 
-Python
+# 📂 Dataset Information
 
-Google Colab / Jupyter Notebook
+The dataset contains **999 student records** and **15 features** describing student demographics, academic habits, and performance.
 
-Pandas – Data manipulation
+| Feature | Description |
+|------|------|
+| StudentID | Unique student identifier |
+| Age | Age of the student |
+| Gender | Gender of the student |
+| Ethnicity | Ethnicity category |
+| ParentalEducation | Parents' education level |
+| StudyTimeWeekly | Weekly study hours |
+| Absences | Number of absences |
+| Tutoring | Whether student receives tutoring |
+| ParentalSupport | Level of parental support |
+| Extracurricular | Participation in extracurricular activities |
+| Sports | Participation in sports |
+| Music | Participation in music |
+| Volunteering | Participation in volunteering |
+| GPA | Grade Point Average |
+| GradeClass | Academic performance classification |
 
-NumPy – Numerical computations
+---
 
-Matplotlib – Data visualization
+# ⚙️ Technologies Used
 
-Seaborn – Statistical visualization
+- **Python**
+- **Google Colab / Jupyter Notebook**
+- **Pandas**
+- **NumPy**
+- **Matplotlib**
+- **Seaborn**
 
-🔎 Exploratory Data Analysis Steps
+---
 
-The following steps were performed during the EDA process:
+# 🔍 Exploratory Data Analysis
 
-1️⃣ Data Loading
+The following analysis steps were performed:
 
-The dataset was imported and loaded into a Pandas DataFrame.
+1. Data Loading  
+2. Data Inspection  
+3. Data Cleaning  
+4. Statistical Summary  
+5. Univariate Analysis  
+6. Bivariate Analysis  
+7. Correlation Analysis  
+8. Visualization of key relationships  
 
-2️⃣ Data Understanding
+---
 
-Checked dataset shape
+# 📈 Visualizations
 
-Reviewed column names
+## Correlation Matrix
 
-Identified data types
+Shows relationships between all numerical variables.
 
-3️⃣ Data Cleaning
+![Correlation Matrix](images/correlation_matrix.png)
 
-Checked for missing values
+---
 
-Verified dataset consistency
+## Study Time vs GPA
 
-4️⃣ Statistical Summary
+Students with higher study time tend to have slightly better GPA.
 
-Descriptive statistics were used to understand the distribution of numeric features such as:
+![Study Time vs GPA](images/studytime_vs_gpa.png)
 
-Study time
+---
 
-Absences
+## Absences vs GPA
 
-GPA
+Higher absences strongly correlate with lower GPA.
 
-5️⃣ Univariate Analysis
+![Absences vs GPA](images/absences_vs_gpa.png)
 
-Analyzed individual feature distributions using:
+---
 
-Histograms
-
-Boxplots
-
-6️⃣ Bivariate Analysis
-
-Explored relationships between variables such as:
-
-Study Time vs GPA
-
-Absences vs GPA
-
-Gender vs GPA
-
-7️⃣ Correlation Analysis
-
-A correlation matrix heatmap was generated to identify relationships between variables.
-
-📈 Key Visualizations
-
-The project includes several visualizations to better understand the dataset:
-
-Correlation Heatmap
-
-Study Time vs GPA Scatter Plot
-
-Absences vs GPA Scatter Plot
-
-Gender vs GPA Box Plot
-
-Feature Distribution Histograms
-
-These visualizations help highlight patterns and relationships in the data.
-
-💡 Key Insights
-
-Some important insights from the analysis include:
-
-Students with more absences tend to have lower GPAs.
-
-Higher weekly study time slightly improves academic performance.
-
-Parental support shows a positive relationship with GPA.
+## Gender vs GPA
 
 Gender does not show a significant difference in GPA distribution.
 
-Extracurricular activities show a balanced but limited impact on GPA.
+![Gender vs GPA](images/gender_vs_gpa.png)
 
-📁 Project Structure
+---
+
+# 💡 Key Insights
+
+From the analysis, the following insights were observed:
+
+- Students with **more absences tend to have significantly lower GPAs**.
+- **Higher weekly study time slightly improves academic performance**.
+- **Parental support positively impacts GPA**.
+- **Gender does not significantly affect academic performance**.
+- Extracurricular activities show **moderate influence on student outcomes**.
+
+---
+
+# 📁 Project Structure
+
+```
 Student-Performance-EDA
 │
 ├── student_performance.ipynb
-├── dataset.xlsx
-├── README.md
-🚀 How to Run the Project
+├── Student_performance_data.xlsx
+├── images
+│   ├── correlation_matrix.png
+│   ├── studytime_vs_gpa.png
+│   ├── absences_vs_gpa.png
+│   └── gender_vs_gpa.png
+│
+└── README.md
+```
 
-Clone this repository
+---
 
+# 🚀 How to Run the Project
+
+### 1️⃣ Clone the Repository
+
+```
 git clone https://github.com/yourusername/student-performance-eda.git
+```
 
-Open the notebook in Google Colab or Jupyter Notebook
+### 2️⃣ Install Required Libraries
 
-Install required libraries
-
+```
 pip install pandas numpy matplotlib seaborn
+```
 
-Run the notebook cells step by step to reproduce the analysis.
+### 3️⃣ Run the Notebook
 
-📊 Future Improvements
+Open the notebook in **Google Colab or Jupyter Notebook** and run all cells.
 
-Possible improvements for this project:
+---
 
-Build a machine learning model to predict GPA
+# 🔮 Future Improvements
 
-Perform feature engineering
+Possible future enhancements include:
 
-Apply advanced statistical analysis
+- Building a **Machine Learning model to predict GPA**
+- Creating an **interactive dashboard**
+- Performing **advanced statistical analysis**
+- Adding **feature engineering**
 
-Build an interactive dashboard
+---
 
-👨‍💻 Author
+# 👨‍💻 Author
 
-Yash Vardhan Ojha
-B.Tech Information Technology
-Interested in Data Analytics, Machine Learning, and Software Development
+**Yash Vardhan Ojha**  
+B.Tech – Information Technology
+
+Interested in **Data Analytics | Machine Learning | Software Development**
+
+---
