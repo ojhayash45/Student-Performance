@@ -92,7 +92,7 @@ The following analysis steps were performed:
 
 Shows relationships between all numerical variables.
 
-![Correlation Matrix](images/correlation_matrix.png)
+![Correlation Matrix](correlation.png)
 
 ---
 
