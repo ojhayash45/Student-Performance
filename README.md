@@ -86,39 +86,6 @@ The following analysis steps were performed:
 
 ---
 
-# 📈 Visualizations
-
-## Correlation Matrix
-
-Shows relationships between all numerical variables.
-
-![Correlation Matrix](correlation.png)
-
----
-
-## Study Time vs GPA
-
-Students with higher study time tend to have slightly better GPA.
-
-![Study Time vs GPA](images/studytime_vs_gpa.png)
-
----
-
-## Absences vs GPA
-
-Higher absences strongly correlate with lower GPA.
-
-![Absences vs GPA](images/absences_vs_gpa.png)
-
----
-
-## Gender vs GPA
-
-Gender does not show a significant difference in GPA distribution.
-
-![Gender vs GPA](images/gender_vs_gpa.png)
-
----
 
 # 💡 Key Insights
 
